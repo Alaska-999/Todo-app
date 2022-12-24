@@ -13,10 +13,10 @@ const Main = () => {
             <Container>
                 <Header>TODO</Header>
                 <NewTodo/>
-                <TodoPannel>
+                <TodoPanel>
                     <TodoList/>
                     <Footer/>
-                </TodoPannel>
+                </TodoPanel>
             </Container>
         </div>
     );
@@ -33,7 +33,7 @@ const Header = styled.h1`
   margin-bottom: 10px;
 `
 
-const TodoPannel = styled.div`
+const TodoPanel = styled.div`
   background: #25273C;
   border: none;
   border-radius: 4px;
@@ -41,6 +41,5 @@ const TodoPannel = styled.div`
   z-index: 20;
 
 `
-
 
 export default Main;

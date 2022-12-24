@@ -1,4 +1,3 @@
-
 export  const selectVisibleTodos = (state, filter ) => {
     switch (filter) {
         case 'all': {

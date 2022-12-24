@@ -11,14 +11,11 @@ const TodoList = () => {
     const todoList = useSelector(state => selectVisibleTodos(state, filter))
 
     return (
-
         <List>
             {todoList.map(todo => (
                 <Todo key={todo.id} todo={todo}/>
             ))}
         </List>
-
-
     );
 };
 
@@ -29,6 +26,5 @@ const List = styled.ul`
   z-index: 20;
   list-style: none;
 `
-
 
 export default TodoList;

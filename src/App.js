@@ -29,6 +29,5 @@ const AppImage = styled.img`
   left: 0;
 `
 
-
 export default App;
 

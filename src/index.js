@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import Root from "./Root";
 import {Provider} from "react-redux";
 import {configurateStore} from "./store";

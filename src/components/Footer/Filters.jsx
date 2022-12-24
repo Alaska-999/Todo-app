@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {Link, useParams} from "react-router-dom";
 
 const Filters = () => {
-    //const {filter} = useParams();
     return (
         <div>
             <Filter to='/all'>All</Filter>
