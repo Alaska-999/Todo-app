@@ -70,15 +70,18 @@ const TodoInfo = styled.div`
 const TodoTitle = styled.div`
   display: flex;
   margin-left: 10px;
-  flex-shrink: 1;
   word-wrap: break-word;
   word-break: break-all;
+ margin-right: 10px;
 `
 
 const TodoTitleCompleted = styled.div`
   margin-left: 10px;
   color: #4D5066;
   text-decoration: line-through;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-right: 10px;
 `
 const Delete = styled.button`
   cursor: pointer;
