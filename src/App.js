@@ -17,6 +17,7 @@ const AppWrapper = styled.div`
   min-height: 100vh;
   padding: 0;
   background: #161722;
+ overflow: hidden;
 `
 
 const AppImage = styled.img`
