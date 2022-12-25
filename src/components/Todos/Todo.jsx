@@ -48,7 +48,7 @@ const Todo = (props) => {
 const TodoContainer = styled.li`
   padding: 16px 15px;
   width: 100%;
-  font-family: Josefin Sans;
+  font-family: Josefin Sans ,serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -58,6 +58,7 @@ const TodoContainer = styled.li`
   justify-content: space-between;
   border-bottom: 1px solid #393A4C;
   //cursor: move;
+
 `
 
 const TodoInfo = styled.div`
@@ -67,7 +68,11 @@ const TodoInfo = styled.div`
 `
 
 const TodoTitle = styled.div`
+  display: flex;
   margin-left: 10px;
+  flex-shrink: 1;
+  word-wrap: break-word;
+  word-break: break-all;
 `
 
 const TodoTitleCompleted = styled.div`

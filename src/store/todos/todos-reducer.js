@@ -6,14 +6,14 @@ const DELETE_COMPLETED = 'DELETE_COMPLETED'
 export const todosReducer = (state = [], action) => {
     switch (action.type) {
         case ADD_TODO: {
-            return [
-                ...state,
+                    return (
+                [...state,
                 {
                     id: Math.random(),
                     title: action.title,
                     completed: false
                 }
-            ]
+            ])
         }
         case DELETE_TODO: {
             return state.filter((todo) => todo.id !== action.todoId);

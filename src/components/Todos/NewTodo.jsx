@@ -10,6 +10,9 @@ const NewTodo = () => {
 
     const submitHandler = (event) => {
         event.preventDefault()
+        if(event.target.title.value === '') {
+            return console.error('Empty input')
+        }
         dispatch(addTodo(event.target.title.value))
         event.target.reset();
     }
@@ -35,6 +38,8 @@ const Input = styled.input`
   font-size: 18px;
   line-height: 1;
   color: #CACDE8;
+  space: nowrap;
+  
   &:focus {
    outline: none;
   }
