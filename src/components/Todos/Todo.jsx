@@ -10,7 +10,7 @@ const Todo = (props) => {
     const [checked, setChecked] = useState(false)
 
     useEffect(() => {
-        if(props.todo.completed) {
+        if (props.todo.completed) {
             setChecked(true)
         } else {
             setChecked(false)
@@ -27,8 +27,8 @@ const Todo = (props) => {
             <TodoInfo>
                 <CheckButton checked={checked}
                              checkHandler={checkHandler}
-                           type="checkbox"
-                    />
+                             type="checkbox"
+                />
 
                 {props.todo.completed ?
                     <TodoTitleCompleted>{props.todo.title}</TodoTitleCompleted>
@@ -48,7 +48,7 @@ const Todo = (props) => {
 const TodoContainer = styled.li`
   padding: 16px 15px;
   width: 100%;
-  font-family: Josefin Sans ,serif;
+  font-family: Josefin Sans, serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -65,6 +65,7 @@ const TodoInfo = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
+ width: 350px;
 `
 
 const TodoTitle = styled.div`
@@ -72,7 +73,7 @@ const TodoTitle = styled.div`
   margin-left: 10px;
   word-wrap: break-word;
   word-break: break-all;
- margin-right: 10px;
+  padding-right: 10px;
 `
 
 const TodoTitleCompleted = styled.div`
@@ -92,7 +93,7 @@ const Delete = styled.button`
   position: relative;
   opacity: 0.4;
   transition: opacity ease 0.2s;
-
+  margin-left: 0;
   :hover {
     opacity: 1;
   }
@@ -103,9 +104,9 @@ const Delete = styled.button`
     width: 20px;
     height: 1px;
     background: #CACDE8;
-    left: -5px;
+    left: -0px;
   }
-  
+
   &:before {
     transform: rotate(45deg);
   }
