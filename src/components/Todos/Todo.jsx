@@ -65,7 +65,7 @@ const TodoInfo = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
- width: 430px;
+  width: 430px;
   @media (max-width: 1150px) {
     width: 370px;
   }
@@ -97,6 +97,8 @@ const Delete = styled.button`
   opacity: 0.4;
   transition: opacity ease 0.2s;
   margin-left: 0;
+  margin-right: 5px;
+
   :hover {
     opacity: 1;
   }
