@@ -65,7 +65,10 @@ const TodoInfo = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
- width: 350px;
+ width: 430px;
+  @media (max-width: 1150px) {
+    width: 370px;
+  }
 `
 
 const TodoTitle = styled.div`
